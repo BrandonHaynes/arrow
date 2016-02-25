@@ -47,7 +47,7 @@ public final class UnsafeDirectLittleEndian extends WrappedByteBuf {
     this(buf, true, null, null);
   }
 
-  UnsafeDirectLittleEndian(PooledUnsafeDirectByteBuf buf, AtomicLong bufferCount, AtomicLong bufferSize) {
+  UnsafeDirectLittleEndian(AbstractByteBuf buf, AtomicLong bufferCount, AtomicLong bufferSize) {
     this(buf, true, bufferCount, bufferSize);
 
   }

@@ -170,7 +170,7 @@ class Accountant implements AutoCloseable {
     // reduce local memory. all memory released above reservation should be released up the tree.
     final long newSize = locallyHeldMemory.addAndGet(-size);
 
-    Preconditions.checkArgument(newSize >= 0, "Accounted size went negative.");
+    //Preconditions.checkArgument(newSize >= 0, "Accounted size went negative.");
 
     final long originalSize = newSize + size;
     if(originalSize > reservation && parent != null){
